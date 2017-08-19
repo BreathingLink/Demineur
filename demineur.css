@@ -11,7 +11,7 @@ header {
     margin-bottom: 10px;
 }
 /**/
-header p {
+#nbMines {
     margin-left: 5px;
     width: 25px;
     border: 1px solid black;
@@ -23,6 +23,7 @@ header p {
 #grid {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     overflow: hidden;
     margin: 0 auto;
     padding: 3px;
@@ -31,15 +32,11 @@ header p {
     background-color: #735843;
 }
 /**/
-#grid > div {
-    margin: 3px;
-    height: 25px;
-    width: 25px;
-    background-color: #a38863;
-}
-/**/
 #message {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
     padding-top: 30%;
     height: 70%;
     width: 100%;
@@ -47,6 +44,77 @@ header p {
     color: white;
     font-size: 500%;
     background-color: black;
-    opacity: 0;
+    opacity: 0.5;
+}
+/**/
+#grid > div {
+    margin: 3px;
+    padding-top: 3px;
+    height: 22px;
+    width: 25px;
+    background-color: #a38863;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+/**/
+#grid .c0
+{
+    background-color: #d8c3a8;
+}
+/**/
+#grid .c1
+{
+    background-color: #4590ff;
+}
+/**/
+#grid .c2
+{
+    background-color: #488240;
+}
+/**/
+#grid .c3
+{
+   background-color: #ff4545;
+}
+/**/
+#grid .c4
+{
+    background-color: #405084;
+}
+/**/
+#grid .c5
+{
+    background-color: #843730;
+}
+/**/
+#grid .c6
+{
+    background-color: #408284;
+}
+/**/
+#grid .c7
+{
+    background-color: #844084;
+}
+/**/
+#grid .c8
+{
+    background-color: #252025;
+}
+/**
+#grid .hole
+{
+    
+}
+/**
+#grid .mine
+{
+    
+}
+/**
+#grid .safe
+{
+    
 }
 /**/
